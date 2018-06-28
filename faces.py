@@ -10,6 +10,7 @@ class Faces:
     def __init__(self):
         self.load()
 
+
     def load(self):
 
         print('LOADING FACES')

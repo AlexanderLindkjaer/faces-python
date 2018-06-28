@@ -7,7 +7,7 @@ class Api():
         self.loadFaces()
 
     def loadFaces(self):
-        r = requests.get('http://facefunadmin.test/api/faces')
+        r = requests.get('http://127.0.0.1:8000//api/faces')
         self.data = r.json()
 
     def getData(self):
@@ -15,5 +15,5 @@ class Api():
 
 
     def getRandomShout(self, face_id):
-        r = requests.get('http://facefunadmin.test/api/face/'+face_id+'/shouts/random')
+        r = requests.get('http://127.0.0.1:8000//api/face/'+face_id+'/shouts/random')
         return r.json()
